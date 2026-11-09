@@ -42,7 +42,7 @@
     </div>`;
   const realCover = (b) => `<div class="cover"><img src="${esc(b.cover)}" alt="غلاف: ${esc(b.title)}" loading="lazy"></div>`;
   /* ── الواجهة: الصفات المتناوبة ── */
-  const roles = [P.rank + " · " + P.speciality, P.centre, "منسق ماستر المنازعات المدنية والعقارية", "باحث ومؤلف في القانون الخاص"];
+  const roles = [P.rank + " · " + P.speciality, P.centre, "منسق ماستر المنازعات المدنية والعقارية سابقا", "باحث ومؤلف في القانون الخاص"];
   const rot = $("#roles-rotator");
   if (rot) {
     rot.innerHTML = roles.map((r, i) => `<span class="${i === 0 ? "is-on" : ""}">${esc(r)}</span>`).join("");

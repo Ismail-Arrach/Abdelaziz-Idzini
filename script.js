@@ -241,7 +241,7 @@
     <article class="master reveal">
       <button type="button" class="master-cover" data-album="m${i}" aria-label="البطاقة التقنية"><img src="${esc(thumb(m.pages[0]))}" alt="" loading="lazy"><span>📄 البطاقة التقنية</span></button>
       <div class="master-body">
-        ${m.heading ? "" : `<span class="master-role">${esc(m.role)}</span>`}
+        <span class="master-role">${esc(m.role)}</span>
         <h3>${esc(m.heading || m.title)}</h3>
         <p class="master-place">${esc(m.place)}</p>
         <p>${esc(m.summary)}</p>
